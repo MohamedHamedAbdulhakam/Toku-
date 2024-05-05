@@ -11,7 +11,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
           backgroundColor: Color(0xff49332a),
           title: Text(
-            "Toko",
+            "Toko App",
             style: TextStyle(color: Colors.white, fontSize: 22),
           )),
       body: Column(
