@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:toku/components/category_item.dart';
+import 'package:toku/screens/number_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,19 +17,30 @@ class HomePage extends StatelessWidget {
           )),
       body: Column(
         children: [
-          category(onTap: () {
-            print('numbers tapped');
-          },
-            text: 'Number',color: Color(0xfff99531),),
-          category(text: 'Big family',color: Color(0xff528032),),
-          category(text: 'Color',color: Color(0xff7d40a2),),
-          category(text: 'Phrases',color: Color(0xff46a5cb),),
-      
-          
+          category(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (BuildContext context) {
+                return NumbersPage();
+              }));
+            },
+            text: 'Number',
+            color: Color(0xfff99531),
+          ),
+          category(
+            text: 'Big family',
+            color: Color(0xff528032),
+          ),
+          category(
+            text: 'Color',
+            color: Color(0xff7d40a2),
+          ),
+          category(
+            text: 'Phrases',
+            color: Color(0xff46a5cb),
+          ),
         ],
       ),
     );
   }
 }
-
-
