@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                 return NumbersPage();
               }));
             },
-            text: 'Number',
+            text: 'Number ',
             color: Color(0xfff99531),
           ),
           category(
