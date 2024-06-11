@@ -10,14 +10,14 @@ class NumbersPage extends StatelessWidget {
      final List<Number> numbers = const [
     Number(
       
-      jpName: 'ichi',
-      enName: 'one',
+      jpName: 'ichi ',
+      enName: 'one ',
       image: 'assets/images/numbers/number_one.png',
     ),
     Number(
      
-      jpName: 'Ni',
-      enName: 'two',
+      jpName: 'Ni ',
+      enName: 'two ',
       image: 'assets/images/numbers/number_two.png',
     ),
     Number(
