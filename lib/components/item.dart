@@ -33,10 +33,18 @@ class Item extends StatelessWidget {
           ),
           Padding(
               padding: EdgeInsets.only(right: 16),
-              child: Icon(
-                Icons.play_arrow,
-                color: Colors.white,
-              ))
+              child:IconButton(onPressed:(() {
+                
+              }),icon: Icon(
+                  Icons.play_arrow,
+                  color: Colors.white,
+                ),) /*GestureDetector(
+                child: Icon(
+                  Icons.play_arrow,
+                  color: Colors.white,
+                ),
+              )*/
+              )
         ],
       ),
     );
