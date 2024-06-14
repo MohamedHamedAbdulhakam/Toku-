@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:toku/models/number.dart';
 
 class Item extends StatelessWidget {
-  const Item({Key? key,required this.number}) : super(key: key);
-   final Number number;
+  const Item({Key? key, required this.number}) : super(key: key);
+  final Number number;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,7 +23,7 @@ class Item extends StatelessWidget {
                   style: TextStyle(color: Colors.white),
                 ),
                 Text(
-                 number.enName,
+                  number.enName,
                   style: TextStyle(color: Colors.white),
                 ),
               ],
@@ -34,14 +34,16 @@ class Item extends StatelessWidget {
           ),
           Padding(
               padding: EdgeInsets.only(right: 16),
-              child:IconButton(onPressed:(() {
-                final player = AudioPlayer();
-                player.setSourceAsset('assets/sounds/colors/black.wav')
-                
-              }),icon: Icon(
+              child: IconButton(
+                onPressed: (() {
+                  final player = AudioPlayer();
+                  player.setSourceAsset(number.sound);
+                }),
+                icon: Icon(
                   Icons.play_arrow,
                   color: Colors.white,
-                ),) /*GestureDetector(
+                ),
+              ) /*GestureDetector(
                 child: Icon(
                   Icons.play_arrow,
                   color: Colors.white,
